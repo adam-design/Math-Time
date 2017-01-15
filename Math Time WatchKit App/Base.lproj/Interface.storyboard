@@ -41,6 +41,9 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="questionLabel" destination="541-ah-HJE" id="WdI-bf-ugM"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="477" y="345"/>
