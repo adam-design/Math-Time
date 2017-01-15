@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C0809F01E2B274D00B66949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0809EF1E2B274D00B66949 /* AppDelegate.swift */; };
+		9C0809F21E2B274E00B66949 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0809F11E2B274E00B66949 /* ViewController.swift */; };
+		9C0809F51E2B274E00B66949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0809F31E2B274E00B66949 /* Main.storyboard */; };
+		9C0809F71E2B274E00B66949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0809F61E2B274E00B66949 /* Assets.xcassets */; };
+		9C0809FA1E2B274E00B66949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0809F81E2B274E00B66949 /* LaunchScreen.storyboard */; };
+		9C0809FF1E2B274E00B66949 /* Math Time WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9C0809FE1E2B274E00B66949 /* Math Time WatchKit App.app */; };
+		9C080A051E2B274E00B66949 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C080A031E2B274E00B66949 /* Interface.storyboard */; };
+		9C080A071E2B274E00B66949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C080A061E2B274E00B66949 /* Assets.xcassets */; };
+		9C080A0E1E2B274E00B66949 /* Math Time WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9C080A0D1E2B274E00B66949 /* Math Time WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9C080A151E2B274E00B66949 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C080A141E2B274E00B66949 /* InterfaceController.swift */; };
+		9C080A171E2B274E00B66949 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C080A161E2B274E00B66949 /* ExtensionDelegate.swift */; };
+		9C080A191E2B274E00B66949 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C080A181E2B274E00B66949 /* NotificationController.swift */; };
+		9C080A1B1E2B274E00B66949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C080A1A1E2B274E00B66949 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C080A001E2B274E00B66949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C0809E41E2B274D00B66949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C0809FD1E2B274E00B66949;
+			remoteInfo = "Math Time WatchKit App";
+		};
+		9C080A0F1E2B274E00B66949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C0809E41E2B274D00B66949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C080A0C1E2B274E00B66949;
+			remoteInfo = "Math Time WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9C080A221E2B274E00B66949 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9C080A0E1E2B274E00B66949 /* Math Time WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C080A261E2B274E00B66949 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9C0809FF1E2B274E00B66949 /* Math Time WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9C0809EC1E2B274D00B66949 /* Math Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0809EF1E2B274D00B66949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C0809F11E2B274E00B66949 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C0809F41E2B274E00B66949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C0809F61E2B274E00B66949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C0809F91E2B274E00B66949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C0809FB1E2B274E00B66949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C0809FE1E2B274E00B66949 /* Math Time WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Time WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C080A041E2B274E00B66949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9C080A061E2B274E00B66949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C080A081E2B274E00B66949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C080A0D1E2B274E00B66949 /* Math Time WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Math Time WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C080A131E2B274E00B66949 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		9C080A141E2B274E00B66949 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9C080A161E2B274E00B66949 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9C080A181E2B274E00B66949 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		9C080A1A1E2B274E00B66949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C080A1C1E2B274E00B66949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C0809E91E2B274D00B66949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C080A0A1E2B274E00B66949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C0809E31E2B274D00B66949 = {
+			isa = PBXGroup;
+			children = (
+				9C0809EE1E2B274D00B66949 /* Math Time */,
+				9C080A021E2B274E00B66949 /* Math Time WatchKit App */,
+				9C080A111E2B274E00B66949 /* Math Time WatchKit Extension */,
+				9C0809ED1E2B274D00B66949 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C0809ED1E2B274D00B66949 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C0809EC1E2B274D00B66949 /* Math Time.app */,
+				9C0809FE1E2B274E00B66949 /* Math Time WatchKit App.app */,
+				9C080A0D1E2B274E00B66949 /* Math Time WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C0809EE1E2B274D00B66949 /* Math Time */ = {
+			isa = PBXGroup;
+			children = (
+				9C0809EF1E2B274D00B66949 /* AppDelegate.swift */,
+				9C0809F11E2B274E00B66949 /* ViewController.swift */,
+				9C0809F31E2B274E00B66949 /* Main.storyboard */,
+				9C0809F61E2B274E00B66949 /* Assets.xcassets */,
+				9C0809F81E2B274E00B66949 /* LaunchScreen.storyboard */,
+				9C0809FB1E2B274E00B66949 /* Info.plist */,
+			);
+			path = "Math Time";
+			sourceTree = "<group>";
+		};
+		9C080A021E2B274E00B66949 /* Math Time WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9C080A031E2B274E00B66949 /* Interface.storyboard */,
+				9C080A061E2B274E00B66949 /* Assets.xcassets */,
+				9C080A081E2B274E00B66949 /* Info.plist */,
+			);
+			path = "Math Time WatchKit App";
+			sourceTree = "<group>";
+		};
+		9C080A111E2B274E00B66949 /* Math Time WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9C080A141E2B274E00B66949 /* InterfaceController.swift */,
+				9C080A161E2B274E00B66949 /* ExtensionDelegate.swift */,
+				9C080A181E2B274E00B66949 /* NotificationController.swift */,
+				9C080A1A1E2B274E00B66949 /* Assets.xcassets */,
+				9C080A1C1E2B274E00B66949 /* Info.plist */,
+				9C080A121E2B274E00B66949 /* Supporting Files */,
+			);
+			path = "Math Time WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		9C080A121E2B274E00B66949 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C080A131E2B274E00B66949 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C0809EB1E2B274D00B66949 /* Math Time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C080A271E2B274E00B66949 /* Build configuration list for PBXNativeTarget "Math Time" */;
+			buildPhases = (
+				9C0809E81E2B274D00B66949 /* Sources */,
+				9C0809E91E2B274D00B66949 /* Frameworks */,
+				9C0809EA1E2B274D00B66949 /* Resources */,
+				9C080A261E2B274E00B66949 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C080A011E2B274E00B66949 /* PBXTargetDependency */,
+			);
+			name = "Math Time";
+			productName = "Math Time";
+			productReference = 9C0809EC1E2B274D00B66949 /* Math Time.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C0809FD1E2B274E00B66949 /* Math Time WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C080A231E2B274E00B66949 /* Build configuration list for PBXNativeTarget "Math Time WatchKit App" */;
+			buildPhases = (
+				9C0809FC1E2B274E00B66949 /* Resources */,
+				9C080A221E2B274E00B66949 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C080A101E2B274E00B66949 /* PBXTargetDependency */,
+			);
+			name = "Math Time WatchKit App";
+			productName = "Math Time WatchKit App";
+			productReference = 9C0809FE1E2B274E00B66949 /* Math Time WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9C080A0C1E2B274E00B66949 /* Math Time WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C080A1F1E2B274E00B66949 /* Build configuration list for PBXNativeTarget "Math Time WatchKit Extension" */;
+			buildPhases = (
+				9C080A091E2B274E00B66949 /* Sources */,
+				9C080A0A1E2B274E00B66949 /* Frameworks */,
+				9C080A0B1E2B274E00B66949 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Math Time WatchKit Extension";
+			productName = "Math Time WatchKit Extension";
+			productReference = 9C080A0D1E2B274E00B66949 /* Math Time WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C0809E41E2B274D00B66949 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = vgmoose;
+				TargetAttributes = {
+					9C0809EB1E2B274D00B66949 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = C34C2M7MC7;
+						ProvisioningStyle = Automatic;
+					};
+					9C0809FD1E2B274E00B66949 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = C34C2M7MC7;
+						ProvisioningStyle = Automatic;
+					};
+					9C080A0C1E2B274E00B66949 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = C34C2M7MC7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9C0809E71E2B274D00B66949 /* Build configuration list for PBXProject "Math Time" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C0809E31E2B274D00B66949;
+			productRefGroup = 9C0809ED1E2B274D00B66949 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C0809EB1E2B274D00B66949 /* Math Time */,
+				9C0809FD1E2B274E00B66949 /* Math Time WatchKit App */,
+				9C080A0C1E2B274E00B66949 /* Math Time WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C0809EA1E2B274D00B66949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0809FA1E2B274E00B66949 /* LaunchScreen.storyboard in Resources */,
+				9C0809F71E2B274E00B66949 /* Assets.xcassets in Resources */,
+				9C0809F51E2B274E00B66949 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C0809FC1E2B274E00B66949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C080A071E2B274E00B66949 /* Assets.xcassets in Resources */,
+				9C080A051E2B274E00B66949 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C080A0B1E2B274E00B66949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C080A1B1E2B274E00B66949 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C0809E81E2B274D00B66949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0809F21E2B274E00B66949 /* ViewController.swift in Sources */,
+				9C0809F01E2B274D00B66949 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C080A091E2B274E00B66949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C080A191E2B274E00B66949 /* NotificationController.swift in Sources */,
+				9C080A171E2B274E00B66949 /* ExtensionDelegate.swift in Sources */,
+				9C080A151E2B274E00B66949 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C080A011E2B274E00B66949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C0809FD1E2B274E00B66949 /* Math Time WatchKit App */;
+			targetProxy = 9C080A001E2B274E00B66949 /* PBXContainerItemProxy */;
+		};
+		9C080A101E2B274E00B66949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C080A0C1E2B274E00B66949 /* Math Time WatchKit Extension */;
+			targetProxy = 9C080A0F1E2B274E00B66949 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C0809F31E2B274E00B66949 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C0809F41E2B274E00B66949 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C0809F81E2B274E00B66949 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C0809F91E2B274E00B66949 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9C080A031E2B274E00B66949 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C080A041E2B274E00B66949 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C080A1D1E2B274E00B66949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C080A1E1E2B274E00B66949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C080A201E2B274E00B66949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = C34C2M7MC7;
+				INFOPLIST_FILE = "Math Time WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgmoose.Math-Time.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		9C080A211E2B274E00B66949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = C34C2M7MC7;
+				INFOPLIST_FILE = "Math Time WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgmoose.Math-Time.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		9C080A241E2B274E00B66949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C34C2M7MC7;
+				IBSC_MODULE = Math_Time_WatchKit_Extension;
+				INFOPLIST_FILE = "Math Time WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgmoose.Math-Time.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		9C080A251E2B274E00B66949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C34C2M7MC7;
+				IBSC_MODULE = Math_Time_WatchKit_Extension;
+				INFOPLIST_FILE = "Math Time WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgmoose.Math-Time.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		9C080A281E2B274E00B66949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C34C2M7MC7;
+				INFOPLIST_FILE = "Math Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgmoose.Math-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9C080A291E2B274E00B66949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C34C2M7MC7;
+				INFOPLIST_FILE = "Math Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgmoose.Math-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C0809E71E2B274D00B66949 /* Build configuration list for PBXProject "Math Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C080A1D1E2B274E00B66949 /* Debug */,
+				9C080A1E1E2B274E00B66949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C080A1F1E2B274E00B66949 /* Build configuration list for PBXNativeTarget "Math Time WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C080A201E2B274E00B66949 /* Debug */,
+				9C080A211E2B274E00B66949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9C080A231E2B274E00B66949 /* Build configuration list for PBXNativeTarget "Math Time WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C080A241E2B274E00B66949 /* Debug */,
+				9C080A251E2B274E00B66949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9C080A271E2B274E00B66949 /* Build configuration list for PBXNativeTarget "Math Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C080A281E2B274E00B66949 /* Debug */,
+				9C080A291E2B274E00B66949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C0809E41E2B274D00B66949 /* Project object */;
+}
