@@ -20,6 +20,8 @@
 		9C080A171E2B274E00B66949 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C080A161E2B274E00B66949 /* ExtensionDelegate.swift */; };
 		9C080A191E2B274E00B66949 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C080A181E2B274E00B66949 /* NotificationController.swift */; };
 		9C080A1B1E2B274E00B66949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C080A1A1E2B274E00B66949 /* Assets.xcassets */; };
+		9C080A2B1E2B2E0D00B66949 /* MathInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C080A2A1E2B2E0D00B66949 /* MathInterfaceController.swift */; };
+		9C080A2C1E2B4F7D00B66949 /* MathInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C080A2A1E2B2E0D00B66949 /* MathInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,7 @@
 		9C080A181E2B274E00B66949 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		9C080A1A1E2B274E00B66949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C080A1C1E2B274E00B66949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C080A2A1E2B2E0D00B66949 /* MathInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MathInterfaceController.swift; path = "Math Time WatchKit App/MathInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				9C080A141E2B274E00B66949 /* InterfaceController.swift */,
+				9C080A2A1E2B2E0D00B66949 /* MathInterfaceController.swift */,
 				9C080A161E2B274E00B66949 /* ExtensionDelegate.swift */,
 				9C080A181E2B274E00B66949 /* NotificationController.swift */,
 				9C080A1A1E2B274E00B66949 /* Assets.xcassets */,
@@ -307,6 +311,7 @@
 			files = (
 				9C0809F21E2B274E00B66949 /* ViewController.swift in Sources */,
 				9C0809F01E2B274D00B66949 /* AppDelegate.swift in Sources */,
+				9C080A2B1E2B2E0D00B66949 /* MathInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C080A2C1E2B4F7D00B66949 /* MathInterfaceController.swift in Sources */,
 				9C080A191E2B274E00B66949 /* NotificationController.swift in Sources */,
 				9C080A171E2B274E00B66949 /* ExtensionDelegate.swift in Sources */,
 				9C080A151E2B274E00B66949 /* InterfaceController.swift in Sources */,
@@ -467,7 +473,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -484,7 +490,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -502,7 +508,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -520,7 +526,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -530,6 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C34C2M7MC7;
 				INFOPLIST_FILE = "Math Time/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vgmoose.Math-Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -543,6 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C34C2M7MC7;
 				INFOPLIST_FILE = "Math Time/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vgmoose.Math-Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
