@@ -38,10 +38,13 @@ class MathInterfaceController : WKInterfaceController {
         return expression.expressionValue(with: nil, context: nil) as! Int
     }
     
-    func randOperand() -> String
+    func randOperand(nonZero: Bool = false) -> String
     {
+        // increase the offset by 1 if we don't want a 0 returned
+        let offset = nonZero ? 1 : 0
+        
         // get a random number between 0 (inclusive) and difficulty (exclusive)
-        return String(Int(arc4random_uniform(UInt32(difficulty))))
+        return String(Int(arc4random_uniform(UInt32(difficulty + offset))))
     }
     
     func makeExpression(_ left: String, _ operation: String, _ right: String) -> String
@@ -52,12 +55,12 @@ class MathInterfaceController : WKInterfaceController {
     
     func generateExpression() -> String
     {
-        // generate two operands
+        // generate two operands, second one never zero
         var leftOperand  = randOperand()
-        var rightOperand = randOperand()
+        let rightOperand = randOperand(nonZero: true)
         
         // choose the operation
-        var operation = ["+", "-", "*", "/"].randomElement
+        let operation = ["+", "-", "*", "/"].randomElement
         
         // if it's subtraction, use the sum as the left operand
         if operation == "-"
@@ -76,8 +79,21 @@ class MathInterfaceController : WKInterfaceController {
         // return the expression
         return makeExpression(leftOperand, operation, rightOperand)
     }
+    
+    func advanceCurrentQuestion()
+    {
+        // generate a new expression
+        self.curQuestion = self.generateExpression()
+        
+        // update the label
+        self.updateQuestionLabel()
+    }
 
-    @IBAction func answerPressed() {
+    @IBAction func answerPressed()
+    {
+        // save the current question
+        let curQuestion = self.curQuestion
+        
         // answer button was pressed, prompt for input
         presentTextInputController(withSuggestions: [curQuestion], allowedInputMode: .plain) {
             (result) -> Void in
@@ -89,7 +105,7 @@ class MathInterfaceController : WKInterfaceController {
                 let response = result![0] as? String
                 
                 // compare it to the evaluation of the expression
-                if response == String(self.eval(self.curQuestion))
+                if response == String(self.eval(curQuestion))
                 {
                     // correct!
                     print("Correct")
@@ -100,12 +116,18 @@ class MathInterfaceController : WKInterfaceController {
                     print("incorrect")
                 }
                 
-                // generate a new expression
-                self.curQuestion = self.generateExpression()
                 
-                // update the label
-                self.updateQuestionLabel()
             }
+        }
+        
+        // start a new thread
+        DispatchQueue.global(qos: .background).async {
+            
+            // wait for a few seconds (to redraw without the user seeing)
+            usleep(500000)
+            
+            // advance the current question
+            self.advanceCurrentQuestion()
         }
 
     }

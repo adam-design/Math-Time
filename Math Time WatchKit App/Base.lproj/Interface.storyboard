@@ -19,13 +19,208 @@
                                 <segue destination="tgJ-co-2gI" kind="push" id="onb-qE-4sD"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Settings" id="q23-Gf-FRv">
+                            <connections>
+                                <segue destination="UQ1-2q-Uca" kind="push" id="W4P-eE-5lG"/>
+                            </connections>
+                        </button>
                         <label alignment="right" verticalAlignment="bottom" text="©2017 vgmoose" id="hwh-wc-FXj">
                             <fontDescription key="font" type="system" pointSize="10"/>
                         </label>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="-89" y="-447"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="WgJ-wC-Bea">
+            <objects>
+                <controller id="UQ1-2q-Uca">
+                    <items>
+                        <button width="1" alignment="left" title="Input" id="ezD-Z1-LRC">
+                            <connections>
+                                <segue destination="uS1-1z-PMf" kind="push" id="Zab-bN-5sh"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Difficulty" id="TQ6-Yx-fP6">
+                            <connections>
+                                <segue destination="hrd-pF-B7b" kind="push" id="03C-vg-eMn"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Frequency" id="BMB-1L-Urt">
+                            <connections>
+                                <segue destination="mGC-oO-zzZ" kind="push" id="JDX-T5-fEd"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="About" id="WQC-7g-5kt">
+                            <connections>
+                                <segue destination="NQg-Tn-w6q" kind="push" id="N9Z-01-lPs"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="329" y="-925"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="D40-tI-tAu">
+            <objects>
+                <controller id="NQg-Tn-w6q">
+                    <items>
+                        <label alignment="left" text="This app is released under the CC BY-NC-ND license. Copyright 2017 vgmoose. For more, check out vgmoose.com" numberOfLines="18" id="O88-w0-vcZ">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="592" y="-1234"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="GkV-R1-bMZ">
+            <objects>
+                <controller id="uS1-1z-PMf">
+                    <items>
+                        <switch width="1" alignment="left" title="Keypad Only" id="XWW-fL-1pL">
+                            <fontDescription key="font" type="system" pointSize="11"/>
+                        </switch>
+                        <switch width="1" alignment="left" title="Voice Only" id="0hI-qF-O2a">
+                            <fontDescription key="font" type="system" pointSize="11"/>
+                        </switch>
+                        <switch width="1" alignment="left" title="Advance Automatically" id="X6g-6L-bnx">
+                            <fontDescription key="font" type="system" pointSize="11"/>
+                        </switch>
+                        <button width="1" alignment="left" title="Help" id="PG0-HC-Wla">
+                            <connections>
+                                <segue destination="np5-ie-pEa" kind="push" id="k41-EY-ZAl"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="908" y="-995"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="931-Ss-6WE">
+            <objects>
+                <controller id="np5-ie-pEa">
+                    <items>
+                        <label alignment="left" text="Scribble Only?" numberOfLines="2" id="3ll-O3-ckt">
+                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                        </label>
+                        <label alignment="left" numberOfLines="15" id="dJa-pX-LJX">
+                            <string key="text">Due to limitations, the Scribble input method cannot be used on its own. It is only available alongside Voice when both Voice and Keypad are disabled.</string>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <separator alignment="left" alpha="0.0" id="tSX-wy-C3X"/>
+                        <label alignment="left" text="Advance Automatically?" numberOfLines="2" id="92v-ol-8rb">
+                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                        </label>
+                        <label alignment="left" numberOfLines="15" id="d41-hu-eST">
+                            <string key="text">When this is enabled, the "Answer" button will automatically be pressed. It is only useful to save a click when using the Scribble input method. </string>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1198" y="-996"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="rIK-P5-wzc">
+            <objects>
+                <controller id="mGC-oO-zzZ">
+                    <items>
+                        <label alignment="left" text="How many times a day would you like to be reminded to practice?" numberOfLines="7" id="eD2-QY-5hh"/>
+                        <label alignment="right" text="Current: 20" id="hff-Ht-mYV">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button width="1" alignment="left" title="Enter Value" id="Jgj-52-Uc5"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="547" y="-492"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="nO5-Tq-qyS">
+            <objects>
+                <controller id="UUG-mi-OZ8">
+                    <items>
+                        <label alignment="left" text="How many questions would you like to be asked in one practice session?" numberOfLines="7" id="KcL-zf-KMV"/>
+                        <label alignment="right" text="Current: 20" id="FQF-pb-uZd">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button width="1" alignment="left" title="Enter Value" id="Fgw-2Y-c2V"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="908" y="-133"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="oMO-Oy-DWA">
+            <objects>
+                <controller id="jUC-Td-od4">
+                    <items>
+                        <label alignment="left" numberOfLines="15" id="q5i-ze-SZp">
+                            <string key="text">The max operand is the highest value that can have an operation applied to it. The default max operand is 10, which means only numbers 0 through 9 wil appear.</string>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <label alignment="right" text="Current: 10" id="PXD-F2-uGR">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button width="1" alignment="left" title="Enter Value" id="HOw-vh-3uK"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1179" y="-115"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Qxb-hh-RRN">
+            <objects>
+                <controller id="hrd-pF-B7b">
+                    <items>
+                        <button width="1" alignment="left" title="Enabled Operations" id="MVE-Nw-MPJ">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <segue destination="fTG-Og-cOw" kind="push" id="Fcr-gY-5hc"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Max Operand Value" id="WZX-AX-8Pn">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <segue destination="jUC-Td-od4" kind="push" id="SL2-3m-zfb"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Number of Questions" id="RZz-KY-IVk">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <segue destination="UUG-mi-OZ8" kind="push" id="TAf-Ka-3nQ"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="908" y="-487"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="LGZ-jg-gux">
+            <objects>
+                <controller id="fTG-Og-cOw">
+                    <items>
+                        <switch width="1" alignment="left" value="YES" title="Addition" id="Ah2-dE-kHg">
+                            <fontDescription key="font" type="system" pointSize="11"/>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Subtraction" id="Ehf-ov-9Mk">
+                            <fontDescription key="font" type="system" pointSize="11"/>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Multiplication" id="Cd4-1U-AqB">
+                            <fontDescription key="font" type="system" pointSize="11"/>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Division" id="VAz-XO-DY6">
+                            <fontDescription key="font" type="system" pointSize="11"/>
+                        </switch>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1179" y="-481"/>
         </scene>
         <!--Math Interface Controller-->
         <scene sceneID="aV6-E9-7D9">
@@ -46,7 +241,68 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="477" y="345"/>
+            <point key="canvasLocation" x="244" y="-447"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="y1E-Xv-wlW">
+            <objects>
+                <controller id="tmh-1A-huZ">
+                    <items>
+                        <table alignment="left" id="QIq-Ah-uwv">
+                            <items>
+                                <tableRow id="0YV-7h-7Rh">
+                                    <group key="rootItem" width="1" alignment="left" id="v8j-MB-MRf">
+                                        <items>
+                                            <button width="0.33333333333333331" alignment="left" title="7" id="rAW-VN-GRm"/>
+                                            <button width="0.33333333333333331" alignment="right" title="9" id="PMp-x7-Ytn"/>
+                                            <button width="0.33333333333333298" alignment="center" title="8" id="4MB-v5-vjC"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <table alignment="left" verticalAlignment="center" id="CgO-9X-NyA">
+                            <items>
+                                <tableRow id="B1s-0c-gHd">
+                                    <group key="rootItem" width="1" alignment="left" id="DQh-sy-Zuz">
+                                        <items>
+                                            <button width="0.33333333333333298" alignment="left" title="4" id="ds3-8C-INz"/>
+                                            <button width="0.33333333333333331" alignment="center" title="5" id="6fc-Ay-iJq"/>
+                                            <button width="0.33333333333333331" alignment="right" title="6" id="fKm-yC-gAA"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <table alignment="left" verticalAlignment="bottom" id="aVH-HV-yKZ">
+                            <items>
+                                <tableRow id="MRV-H6-qHd">
+                                    <group key="rootItem" width="1" alignment="left" id="iKf-L5-gw0">
+                                        <items>
+                                            <button width="0.33333333333333298" height="1" alignment="left" title="1" id="V7e-nx-X2X"/>
+                                            <button width="0.33333333333333331" alignment="center" title="2" id="0Gv-0h-SbI"/>
+                                            <button width="0.33333333333333331" alignment="right" title="3" id="WJb-E7-rU5"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <table alignment="left" verticalAlignment="bottom" id="H8t-IC-TD5">
+                            <items>
+                                <tableRow id="64K-7G-7hv">
+                                    <group key="rootItem" width="1" alignment="left" id="IrG-1a-YVs">
+                                        <items>
+                                            <button width="0.33333333333333298" alignment="left" title="0" id="GKU-qI-9hk"/>
+                                            <button width="0.66666666666666663" alignment="left" title="Submit" id="aVd-8F-ByI"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="72" y="-70"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
